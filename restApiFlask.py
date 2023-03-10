@@ -3,7 +3,7 @@ from neo4j import GraphDatabase
 
 app = Flask(__name__)
 
-database_connection = GraphDatabase.driver(uri="bolt://localhost:7687", auth=("neo4j", "jopa6262"))
+database_connection = GraphDatabase.driver(uri="bolt://localhost:7687", auth=("neo4j", "admin"))
 session = database_connection.session()
 
 @app.route('/')
